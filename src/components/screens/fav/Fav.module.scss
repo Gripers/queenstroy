@@ -1,0 +1,15 @@
+.fav {
+  width: 95%;
+  max-width: 1200px;
+  margin: 26px auto;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .fav table thead {
+    display: none;
+  }
+}

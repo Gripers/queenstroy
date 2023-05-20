@@ -1,0 +1,10 @@
+.section {
+  width: 100% !important;
+  max-width: unset !important;
+  position: relative;
+
+  .item img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+}

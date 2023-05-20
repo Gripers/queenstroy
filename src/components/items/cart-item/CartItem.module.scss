@@ -1,0 +1,83 @@
+.item {
+  td {
+    vertical-align: middle;
+  }
+
+  .item__image {
+    text-align: center;
+
+    img {
+      border: 1px solid #ddd;
+    }
+  }
+
+  .item__name {
+    display: grid;
+    overflow: hidden;
+
+    a {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  input {
+    width: 80px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      border-radius: 10px;
+      background-color: #02b533;
+      color: white;
+      padding: 5px 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    display: grid;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+
+    &:last-child {
+      border: none;
+    }
+
+    td {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &::before {
+        content: attr(data-title);
+      }
+    }
+
+    .item__remove svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .item__image {
+      display: none;
+    }
+
+    .item__name {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

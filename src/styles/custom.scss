@@ -1,0 +1,25 @@
+.underline-g {
+  width: fit-content;
+  border-bottom: 2px solid #02b533;
+  padding-bottom: 10px;
+}
+
+.banners__carousel_dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  backface-visibility: visible;
+  transition: all 200ms ease;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: gray;
+  }
+}
+
+.banners__carousel_dot.active span {
+  width: 20px;
+  background-color: #02b533;
+}

@@ -1,0 +1,40 @@
+.sidebar {
+  width: 300px;
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+
+  .head {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #02b335;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  ul {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        color: gray !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
